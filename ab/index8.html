@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url(https://fonts.googleapis.com/earlyaccess/cwtexfangsong.css);
+/* body{
+  
+} */
+        header{
+            display:flex;
+            background-color:black;
+            height:50px;
+            position:relative;
+        }
+        nav{
+            text-align:right;
+            width:100%;
+            margin:0.5% 3%;
+            font-size:0;
+            
+        
+        }
+        
+        
+        nav a{
+            text-decoration:none;
+            padding:10px 40px;
+            line-height:40px;
+            margin:4px 3% 0px;
+            color:white;
+            font-size:15px;
+            font-family: "cwTeXFangSong", serif;
+            
+        }
+        nav a:hover{
+            background-color:orange;
+
+        }
+        .header img{
+            display:inline-block;
+            
+            width: 10%;
+            z-index:10;
+            border:50px solid transparent;
+            position:absolute;
+            left: 2%;
+            
+            /* border:40px solid black;
+            border-image: url(../border-2.png)30% round; */
+        }
+        .header img:hover{
+            transform:scale(1.1);
+            animation: logo 3s infinite linear;
+            
+        }
+        
+        @keyframes logo {
+            5%{
+                border-image: url(border-2.png)30% round;
+            }
+            20%{
+                transform:scale(1.3);
+                
+            border-image: url(border-2.png) 30% round;
+            
+            }
+            95%{
+                transform:scale(1.2);
+                border-image: url(border-2.png) 30% round;
+            }
+            100%{
+                transform:scale(1);
+            }
+        }
+        .img {
+            height: 400px;
+            width: 100%;
+            overflow-y:hidden;
+            
+            text-align:center;
+            /* background-image: url(../21.jpg);
+            background-repeat:no-repeat;
+            background-size:80%; */
+            vertical-align: text-bottom;
+            background-color: #aaa;
+        }
+        .img img{
+            position:relative;
+            bottom:35px;
+            width: auto;
+            display:block;
+            margin:auto;
+            
+            
+        }
+        
+        .path{
+            display:flex; list-style-type: none;
+        }
+        .path li{
+            position:relative;
+            
+            padding:6px 8px;
+        }
+        .path a{
+            color:#aaa;
+            text-decoration:none;
+           font-size:14px;
+
+        }
+        .path li+li::before{
+            content:"/";
+            color:black;
+            position:absolute;
+            left:0px;
+        }
+        .wrap{
+            width:960px;
+            margin:auto;
+            text-align:center;
+            
+        }
+        .item{
+            width:30%;
+            display:inline-block;
+        }
+        .photo{
+            
+            width:100%;
+            background-color: rgb(165, 165, 165);
+            height:400px;
+            overflow:hidden;
+            text-align:center;
+            
+        }
+        .ph{
+            width: 960px;
+            margin:auto;
+            display:flex;
+            
+            
+            
+        
+            
+        }
+
+        .pac{
+            width:50%;
+            
+            background-color: #fff;   
+        }
+        .paa{
+            display:flex;
+            flex-direction: column;
+            justify-content:flex-start;
+            align-items:center;
+            text-align:left;
+        }
+        .pac>img{
+            
+            
+            width:100%;height: auto;
+            /*  */
+            /* box-sizing: border-box; */
+        }
+        footer{
+            width:100%;
+            height:100px;
+            background-color: rgb(0, 0, 0);
+            color:white;
+            margin-top:50px;
+            text-align:center;
+            line-height:50px;
+        }
+        
+    </style>
+</head>
+<body>
+    <header class="header">
+        <img src="logo_2.jpg"alt="logo"/>
+
+        <nav>
+            <a href="#">關於我們</a>
+            <a href="#">產品</a>
+            <a href="#">資訊</a>
+        </nav>
+    </header>
+<div class="img">
+    <img src="21.jpg" alt="#">
+</div>
+
+<ul class="path">
+    
+     <li> <a href="">首頁</a></li>
+    <li><a href="">最新消息</a></li>
+    <li><a href="">內容</a>  </li> 
+</ul>
+<div class="about">
+    <div class="wrap">
+        <div class="item">
+        <img src="150-1.jpg" alt="">
+        <h3>title</h3><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor quisquam repellendus quis minima, soluta corporis modi id dignissimos molestias facilis illum quam saepe est voluptatum iusto aliquam provident dolores placeat?
+        
+        </p>
+        </div>
+        <div class="item">
+        <img src="150-2.jpg" alt="">
+        <h3>title</h3><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique labore excepturi dolor temporibus fugiat veniam, placeat in cumque voluptas necessitatibus incidunt cum tempora, officia illo voluptate molestias. Quo, enim? Doloremque.</p>
+        </div>
+        <div class="item">
+        <img src="150-3.jpg" alt="">
+        <h3>title</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio laborum id neque laboriosam alias temporibus non suscipit omnis corrupti atque aut iste, dicta fugiat voluptates numquam dolorem, fugit quod. Rem!</p>
+        </div>
+    </div>
+</div>
+<div class="photo">
+    <div class="ph">
+    <div class="pac">
+        <img src="222.jpg" alt="">fdhdf
+    </div>
+    <div class="pac paa">
+        <h3>sfsdfs</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum mollitia velit nobis eaque suscipit animi ad culpa consequatur tempora laboriosam eius accusantium aut sunt libero id explicabo, est nesciunt. Labore?</p>
+    </div>
+    
+</div>
+</div>
+    <footer>
+        aaa
+    </footer>
+</body>
+</html>
